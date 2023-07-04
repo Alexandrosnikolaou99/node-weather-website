@@ -11,7 +11,7 @@ const forecast = (latitude, longitude, callback) => {
             callback("Unable to find location!", undefined)
         }
         else {
-            callback(undefined,body.current.weather_descriptions[0] + ". The temperature is " + body.current.temperature + " degrees out. The real feel is " + body.current.feelslike + " degrees.")
+            callback(undefined, body.current.weather_descriptions[0] + ". The temperature is " + body.current.temperature + " degrees out. The real feel is " + body.current.feelslike + " degrees. The humidity is " + body.current.humidity + " and the wind speed is " + body.current.wind_speed +" km/h. Have a nice day! ")
         }
     })
    
